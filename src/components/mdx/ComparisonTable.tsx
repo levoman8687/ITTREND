@@ -3,7 +3,7 @@ interface ComparisonTableProps {
   rows: string[][];
 }
 
-export function ComparisonTable({ headers, rows }: ComparisonTableProps) {
+export function ComparisonTable({ headers = [], rows = [] }: ComparisonTableProps) {
   return (
     <div className="overflow-x-auto my-6 rounded-xl border border-[hsl(var(--border))]">
       <table className="w-full text-sm">
